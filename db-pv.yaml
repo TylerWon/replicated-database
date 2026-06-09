@@ -9,3 +9,4 @@ spec:
     storage: 4Gi
   hostPath:
     path: "/pv/db-pv"
+  storageClassName: standard
