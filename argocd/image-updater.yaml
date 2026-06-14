@@ -1,0 +1,12 @@
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: image-updater
+spec:
+  applicationRefs:
+    - namePattern: replicated-database
+      images:
+        - alias: app
+          imageName: ghcr.io/tylerwon/replicated-database-app
+          commonUpdateSettings:
+            updateStrategy: newest-build
