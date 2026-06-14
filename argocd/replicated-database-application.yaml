@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     directory:
       recurse: true
-      exclude: 'argocd'
+      exclude: 'argocd/**'
   destination:
     server: https://kubernetes.default.svc
     namespace: replicated-database
